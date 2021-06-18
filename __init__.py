@@ -34,8 +34,8 @@ b = r.json()['b']
 
 a_list = []
 b_list = []
-if not(type(a) == 0 and type(b) == 0):
-    temp = random.randint(0, 50)
+if a == 0 or b == 0:
+    temp = random.randint(30, 50)
     a = temp
     b = temp
 
@@ -55,6 +55,10 @@ for i in range(100-a):
 
 for i in range(100-b):
     b_list.append(0)
+
+
+a_turtle.shape("turtle")
+b_turtle.shape("turtle")
 
 a_turtle.penup()
 a_turtle.goto(-limit, 100)
